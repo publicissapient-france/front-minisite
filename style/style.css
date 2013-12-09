@@ -1,0 +1,55 @@
+@import url(main.css);
+@import url(normalize.css);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  background-color: #6A205F; }
+  header div {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    header div:before, header div:after {
+      content: " ";
+      display: table; }
+    header div:after {
+      clear: both; }
+
+section {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section:before, section:after {
+    content: " ";
+    display: table; }
+  section:after {
+    clear: both; }
+  section aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    section aside:last-child {
+      margin-right: 0; }
+  section article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    section article:last-child {
+      margin-right: 0; }
+
+h1 {
+  color: #ffffff;
+  margin: 10px; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 26px; } }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 18px; } }
