@@ -1,0 +1,38 @@
+@import 'main.css';
+@import 'normalize.css';
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "neat/neat-helpers";
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+header {
+  width: 100%;
+  background-color: #6A205F;
+  div {
+    @include outer-container;
+  }
+}
+
+section {
+  @include outer-container;
+  aside {
+    @include span-columns(3);
+  }
+  article {
+    @include span-columns(9);
+  }
+}
+
+h1 {
+  color: #ffffff;
+  margin: 10px;
+  @include media($tablet) {
+    font-size: 26px;
+  }
+
+  @include media($mobile) {
+    font-size: 18px;
+  }
+}
